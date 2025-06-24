@@ -1,0 +1,27 @@
+#root {
+  width: 100vw;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app-container {
+  display: flex; 
+  height: 100vh;
+  background-image: url('src/assets/background2.jpg');
+  background: transparent url('src/assets/background2.jpg') no-repeat center center;
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.touch-area {
+  flex: 1;
+  position: relative;
+}
+
+.side-panel {
+  width: 25%;
+  padding: 1rem;
+  box-sizing: border-box;
+}
