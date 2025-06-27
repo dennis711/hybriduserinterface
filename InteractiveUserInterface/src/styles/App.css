@@ -5,14 +5,33 @@
 }
 
 .app-container {
-  display: flex; 
+  display: flex;
   height: 100vh;
-  background-image: url('src/assets/background2.jpg');
-  background: transparent url('src/assets/background2.jpg') no-repeat center center;
+  background: url('src/assets/background2.jpg') no-repeat right center;
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
+  background-color: aquamarine;
   overflow: hidden;
+}
+
+.color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  transition: background-color 0.3s ease;
+}
+
+.filter-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -99999;
+  pointer-events: none;
 }
 
 .touch-area {
@@ -24,4 +43,15 @@
   width: 25%;
   padding: 1rem;
   box-sizing: border-box;
+}
+
+.filter-values {
+  position: absolute;
+  top: 10;
+  left: 100;
+  padding: 5px;
+  z-index: 9999;
+  border: 1px;
+  border-radius: 5px;
+  background-color: aliceblue;
 }
